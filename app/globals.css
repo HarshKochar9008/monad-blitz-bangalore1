@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-weight: 600;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  /* Neobrutalist box shadow - creates offset border effect */
+  .neobrutal-shadow {
+    box-shadow: 4px 4px 0px 0px #000000;
+  }
+  
+  .neobrutal-shadow-sm {
+    box-shadow: 2px 2px 0px 0px #000000;
+  }
+  
+  .neobrutal-shadow-lg {
+    box-shadow: 6px 6px 0px 0px #000000;
+  }
+  
+  /* Neobrutalist button hover effect */
+  .neobrutal-button:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px 0px #000000;
+  }
+  
+  .neobrutal-button:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px 0px #000000;
+  }
+}
